@@ -19,9 +19,15 @@ Download or clone it [from GitHub](https://github.com/kineme/DataTools).
 ## How to install it
 
    1. Uninstall Kineme StructureTools, Kineme Value Historian, and Kineme Spooky if they are installed. 
-   2. Install the [QCPatch Xcode Template](http://kineme.net/release/QCPatchXcodeTemplate/10), a.k.a. Quartz Composer unofficial API, a.k.a. SkankySDK. 
+   2. Install the [QCPatch Xcode Template](https://github.com/kineme/QCPatchXcodeTemplate), a.k.a. Quartz Composer unofficial API, a.k.a. SkankySDK. 
    3. Build DataTools.xcodeproj. This will create the file ~/Library/Graphics/Quartz Composer Patches/DataTools.plugin. 
    4. Restart Quartz Composer. The patches will show up under the Kineme DataTools category. 
+
+## How to run the unit tests
+
+   1. Download [GHUnit](http://github.com/gabriel/gh-unit) and place GHUnit.framework in /Library/Frameworks/. 
+   2. Set the Active Target to Tests. 
+   3. Build and Run. 
 
 ## License
 
