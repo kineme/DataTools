@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2009 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch compares two structures, and indicates if they are identical or not.
+		
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Structure Equal</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputStructure1</key>
+		<dict>
+			<key>description</key>
+			<string>Input Structure</string>
+			<key>name</key>
+			<string>Structure 1</string>
+		</dict>
+		<key>inputStructure2</key>
+		<dict>
+			<key>description</key>
+			<string>Input Structure</string>
+			<key>name</key>
+			<string>Structure 2</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+        <key>outputEquality</key>
+        <dict>
+            <key>description</key>
+            <string>True if and only if Structure1 and Structure2 are equal</string>
+            <key>name</key>
+            <string>Equal</string>
+        </dict>
+	</dict>
+</dict>
+</plist>

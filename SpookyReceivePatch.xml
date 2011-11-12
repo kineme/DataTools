@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2007 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch outputs the last item sent on a given channel by the Spooky Send patch.
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Spooky Receive</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputSender</key>
+		<dict>
+			<key>description</key>
+			<string>Which Spooky Sender Channel to listen to</string>
+			<key>name</key>
+			<string>Sender Channel</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputOutput</key>
+		<dict>
+			<key>description</key>
+			<string>Object currently on the Sender Channel</string>
+			<key>name</key>
+			<string>Object</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

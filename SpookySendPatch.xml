@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2007 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch adds an item to the specified channel.  When Auto-Clean is enabled, the previous item is removed.
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Spooky Send</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputAutoClean</key>
+		<dict>
+			<key>description</key>
+			<string>Removes previous items added by this patch.  Leave it enabled unless you know what you're doing.</string>
+			<key>name</key>
+			<string>Auto-Clean</string>
+		</dict>
+
+		<key>inputSender</key>
+		<dict>
+			<key>description</key>
+			<string>Which Spooky Sender Channel to broadcast on</string>
+			<key>name</key>
+			<string>Sender Channel</string>
+		</dict>
+		<key>inputObject</key>
+		<dict>
+			<key>description</key>
+			<string>Object to broadcast on the Sender Channel</string>
+			<key>name</key>
+			<string>Object</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

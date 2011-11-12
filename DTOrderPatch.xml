@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch provides an integer identifier, starting at zero, unique among all instances of this patch.
+
+When each frame is rendered, Order is reset to zero, and, as each Order patch is evaluated, a unique value is assigned to each Order patch.
+
+Each iteration within an Iterator gets a unique value, too.
+		
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Order</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+        <key>inputChannel</key>
+        <dict>
+            <key>description</key>
+            <string>A string key representing the counter to be used.  Each channel has an independent counter starting at zero each frame.</string>
+            <key>name</key>
+            <string>Channel</string>
+        </dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+        <key>outputOrder</key>
+        <dict>
+            <key>description</key>
+            <string>A unique identifier representing the order in which this patch was evaluated.</string>
+            <key>name</key>
+            <string>Order</string>
+        </dict>
+	</dict>
+</dict>
+</plist>

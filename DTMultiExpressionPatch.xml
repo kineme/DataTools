@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Composer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2010 Kosada Incorporated.  All rights reserved.</string>
+		<key>description</key>
+		<string>This patch evaluates multiple expressions.  Similar to the "Mathematical Expression" patch, it lets you consolidate multiple expressions into one patch, reusing the same input variables.</string>
+		<key>name</key>
+		<string>MultiExpression</string>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputStructure</key>
+		<dict>
+			<key>description</key>
+			<string>The aggregate structure from all of the input variables and result variables</string>
+			<key>name</key>
+			<string>Structure</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2009 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch records values, and saves them into the composition for playback later.
+
+--
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Value Historian</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputRecord</key>
+		<dict>
+			<key>description</key>
+			<string>Determines whether the patch is working in Record or Playback Mode</string>
+			<key>name</key>
+			<string>Mode</string>
+			<key>menu</key>
+			<array>
+				<string>Record</string>
+				<string>Playback</string>
+			</array>
+		</dict>
+		<key>inputReset</key>
+		<dict>
+			<key>description</key>
+			<string>Removes all recorded values (This is Irreversible)</string>
+			<key>name</key>
+			<string>Reset</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputSamples</key>
+		<dict>
+			<key>description</key>
+			<string>Number of samples currently recorded</string>
+			<key>name</key>
+			<string>Samples</string>
+		</dict>
+		<key>outputDuration</key>
+		<dict>
+			<key>description</key>
+			<string>Duration of current recording, in Seconds</string>
+			<key>name</key>
+			<string>Duration</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

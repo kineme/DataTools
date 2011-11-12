@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>.identifiers</key>
+	<dict>
+		<key>KinemeNamedStructureMaker</key>
+		<dict>
+			<key>nodeAttributes</key>
+			<dict>
+				<key>name</key>
+				<string>Named Structure Maker</string>
+			</dict>
+		</dict>
+		<key>KinemeStructureMaker</key>
+		<dict>
+			<key>nodeAttributes</key>
+			<dict>
+				<key>name</key>
+				<string>Structure Maker</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2008-2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch allows you to create indexed or named structures from multiple inputs.  
+
+Named structures must have unique names for each object.  If a duplicate name is used, "(duplicate)" will be repeatedly appended until the name is unique.
+
+Structures cannot have empty values, so the string "(unplugged)" will be inserted for unattached objects unless "Skip Empty Inputs" is True, in which case the port is ignored.  This will typically make indexes incorrect.
+
+http://kineme.net</string>
+		<key>name</key>
+		<string>Structure Maker</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputSkipEmptyInputs</key>
+		<dict>
+			<key>description</key>
+			<string>This controls how unplugged/empty input ports are handled.  True skips them, False inserts "(unplugged)" strings.</string>
+			<key>name</key>
+			<string>Skip Empty Inputs</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputStructure</key>
+		<dict>
+			<key>description</key>
+			<string>The aggregate structure from all of the inputs</string>
+			<key>name</key>
+			<string>Structure</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch breaks out all the keys of a structure, making their values available as outputs.  Think of a souped-up "Structure Index/Key Member" patch.
+
+To use this patch, do the following:
+	1. Connect a structure to this patch.
+	2. Connect this patch's "Configure" output to a Consumer patch.
+	3. Start the composition running.
+	4. Open this patch's Settings panel and click the "Configure From Input" button.
+	5. Enjoy your new custom-configured outputs.
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Structure Breakout</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputStructure</key>
+		<dict>
+			<key>description</key>
+			<string>Input Structure to break out</string>
+			<key>name</key>
+			<string>Structure</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputConfigure</key>
+		<dict>
+			<key>description</key>
+			<string>A dummy output.  Temporarily connect this port to a Consumer patch in order to configure this patch's other outputs.</string>
+			<key>name</key>
+			<string>Configure</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

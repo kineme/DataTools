@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>name</key>
+		<string>Structure Pop</string>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch removes data from the provided structure.
+
+http://kineme.net/</string>
+		<key>aliasNames</key>
+		<array>
+			<string>dequeue</string>
+			<string>delete</string>
+			<string>remove</string>
+		</array>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputStructure</key>
+		<dict>
+			<key>name</key>
+			<string>Structure</string>
+			<key>description</key>
+			<string>Structure</string>
+		</dict>
+		<key>inputDirection</key>
+		<dict>
+			<key>name</key>
+			<string>Direction</string>
+			<key>description</key>
+			<string>Where to remove the value.</string>
+			<key>menu</key>
+			<array>
+				<string>Remove from Front</string>
+				<string>Remove from Back</string>
+			</array>
+		</dict>
+		<key>inputPopping</key>
+		<dict>
+			<key>name</key>
+			<string>Popping</string>
+			<key>description</key>
+			<string>When true, a value is removed from the Structure.</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputStructure</key>
+		<dict>
+			<key>name</key>
+			<string>Structure</string>
+			<key>description</key>
+			<string>Structure</string>
+		</dict>
+		<key>outputValue</key>
+		<dict>
+			<key>name</key>
+			<string>Popped Value</string>
+			<key>description</key>
+			<string>Popped Value</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

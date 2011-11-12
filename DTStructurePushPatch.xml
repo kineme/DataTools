@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>name</key>
+		<string>Structure Push</string>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch inserts data into the provided structure.
+
+http://kineme.net/</string>
+		<key>aliasNames</key>
+		<array>
+			<string>enqueue</string>
+			<string>insert</string>
+			<string>add</string>
+			<string>append</string>
+			<string>prepend</string>
+		</array>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputStructure</key>
+		<dict>
+			<key>name</key>
+			<string>Structure</string>
+			<key>description</key>
+			<string>Structure</string>
+		</dict>
+		<key>inputDirection</key>
+		<dict>
+			<key>name</key>
+			<string>Direction</string>
+			<key>description</key>
+			<string>Where to insert the value.</string>
+			<key>menu</key>
+			<array>
+				<string>Insert at Front</string>
+				<string>Add to Back</string>
+			</array>
+		</dict>
+		<key>inputValue</key>
+		<dict>
+			<key>name</key>
+			<string>Value</string>
+			<key>description</key>
+			<string>Value</string>
+		</dict>
+		<key>inputPushing</key>
+		<dict>
+			<key>name</key>
+			<string>Pushing</string>
+			<key>description</key>
+			<string>When true, Value is inserted into the Structure.</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputStructure</key>
+		<dict>
+			<key>name</key>
+			<string>Structure</string>
+			<key>description</key>
+			<string>Structure</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch combines two structures into one.
+
+Indexed arrays are appended to one another (renumbering the indices in the second array).
+
+Duplicate keys in the second structure overwrite keys in the first structure.
+		
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Structure Combine</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputStructure1</key>
+		<dict>
+			<key>description</key>
+			<string>Input Structure</string>
+			<key>name</key>
+			<string>Structure 1</string>
+		</dict>
+		<key>inputStructure2</key>
+		<dict>
+			<key>description</key>
+			<string>Input Structure</string>
+			<key>name</key>
+			<string>Structure 2</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+        <key>outputStructure</key>
+        <dict>
+            <key>description</key>
+            <string>Combined structure</string>
+            <key>name</key>
+            <string>Structure</string>
+        </dict>
+	</dict>
+</dict>
+</plist>

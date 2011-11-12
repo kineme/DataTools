@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B028F421163BAC200C4E8B3 /* DataToolsPrincipal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7533203710091B32003756A8 /* DataToolsPrincipal.m */; };
+		2B0699CA1180A16300375C3E /* DTArrayPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0699C91180A16300375C3E /* DTArrayPatch.m */; };
+		2B0699D31180A21300375C3E /* DTArrayPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2B0699D21180A21300375C3E /* DTArrayPatch.xml */; };
+		2B1ECB321164055F00DDF2B4 /* DTSpookyNexus.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B45F310EA73A300C320BA /* DTSpookyNexus.m */; };
+		2B1ECB331164056000DDF2B4 /* SpookyReceivePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA06EB510C99F8B006EAE78 /* SpookyReceivePatch.m */; };
+		2B1ECB341164056100DDF2B4 /* SpookySendPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA06EB710C99F8B006EAE78 /* SpookySendPatch.m */; };
+		2B21F26F1156A0C10099FED4 /* DTOrderPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B21F26E1156A0C10099FED4 /* DTOrderPatch.m */; };
+		2B21F2711156A10B0099FED4 /* DTOrderPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2B21F2701156A10B0099FED4 /* DTOrderPatch.xml */; };
+		2B21F28E1156A57D0099FED4 /* DTOrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B21F28D1156A57D0099FED4 /* DTOrderManager.m */; };
+		2B26D64B12BF027F00B38B4C /* StructureMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B26D64812BF027F00B38B4C /* StructureMaker.m */; };
+		2B26D64C12BF027F00B38B4C /* StructureMakerUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B26D64A12BF027F00B38B4C /* StructureMakerUI.m */; };
+		2B26D65612BF199700B38B4C /* StructureMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B26D64812BF027F00B38B4C /* StructureMaker.m */; };
+		2B26D65712BF199B00B38B4C /* StructureMakerUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B26D64A12BF027F00B38B4C /* StructureMakerUI.m */; };
+		2B26D66F12BF1BC600B38B4C /* StructureMaker.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2B26D64D12BF02AC00B38B4C /* StructureMaker.xml */; };
+		2B26D67612BF1BFA00B38B4C /* StructureMakerUI.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2B26D64E12BF02AC00B38B4C /* StructureMakerUI.nib */; };
+		2B42329F12B2E169000EFB30 /* GHUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B42329E12B2E169000EFB30 /* GHUnit.framework */; };
+		2B4232A812B2E1E7000EFB30 /* SkankySDK-TestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4232A712B2E1E7000EFB30 /* SkankySDK-TestCase.m */; };
+		2B4232AF12B2E251000EFB30 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		2B4232B012B2E255000EFB30 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7533202E10091AF0003756A8 /* Quartz.framework */; };
+		2B42338612B2EAF3000EFB30 /* TestDTMultiExpressionPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B42338512B2EAF3000EFB30 /* TestDTMultiExpressionPatch.m */; };
+		2B42339712B2EB95000EFB30 /* DTMultiExpressionPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AA971D10093C47000986A3 /* DTMultiExpressionPatch.m */; };
+		2B42339A12B2EB9B000EFB30 /* DTMultiExpressionPatchUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6304810C329E7008A22D7 /* DTMultiExpressionPatchUI.m */; };
+		2B7D976012C7F33E002E1EA8 /* DTStructurePushPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D975F12C7F33E002E1EA8 /* DTStructurePushPatch.m */; };
+		2B7D976612C7F657002E1EA8 /* TestDTStructurePushPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D976512C7F657002E1EA8 /* TestDTStructurePushPatch.m */; };
+		2B7D977B12C7F7A2002E1EA8 /* DTStructurePushPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D975F12C7F33E002E1EA8 /* DTStructurePushPatch.m */; };
+		2B7D97A112C7F7F9002E1EA8 /* DTStructurePushPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2B7D977412C7F755002E1EA8 /* DTStructurePushPatch.xml */; };
+		2B7D9A4D12C85CD2002E1EA8 /* DTStructurePopPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D9A4B12C85CD2002E1EA8 /* DTStructurePopPatch.m */; };
+		2B7D9A4E12C85CD2002E1EA8 /* DTStructurePopPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2B7D9A4C12C85CD2002E1EA8 /* DTStructurePopPatch.xml */; };
+		2BC1FCD412CA727300F34002 /* DTStructureCombinePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEA329010E28E9000EEC39F /* DTStructureCombinePatch.m */; };
+		2BC1FCD712CA727C00F34002 /* TestDTStructureCombinePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1FCD012CA722400F34002 /* TestDTStructureCombinePatch.m */; };
+		2BC1FD0712CA744400F34002 /* DTStructureEqualPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB9E1610CF06F50008DCB0 /* DTStructureEqualPatch.m */; };
+		2BC1FD4312CACB2300F34002 /* ValueHistorianPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1FD3E12CACB2300F34002 /* ValueHistorianPatch.m */; };
+		2BC1FD4412CACB2300F34002 /* ValueHistorianPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2BC1FD3F12CACB2300F34002 /* ValueHistorianPatch.xml */; };
+		2BC1FD4512CACB2300F34002 /* ValueHistorianPatchUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1FD4112CACB2300F34002 /* ValueHistorianPatchUI.m */; };
+		2BC1FD4612CACB2300F34002 /* ValueHistorianPatchUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BC1FD4212CACB2300F34002 /* ValueHistorianPatchUI.xib */; };
+		2BEFB4B3118FCE0E0043B483 /* SpookyReceivePatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2A083E8D10E26719005E6670 /* SpookyReceivePatch.xml */; };
+		2BEFB4B4118FCE160043B483 /* SpookySendPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2A083E8F10E26719005E6670 /* SpookySendPatch.xml */; };
+		2BEFB4B5118FCE160043B483 /* DTMultiExpressionPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 75AA972010093C5E000986A3 /* DTMultiExpressionPatch.xml */; };
+		2BEFB4B6118FCE160043B483 /* DTStructureEqualPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2A083E8710E26521005E6670 /* DTStructureEqualPatch.xml */; };
+		2BEFB4B7118FCE160043B483 /* DTStructureCombinePatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2AEA329310E28F0900EEC39F /* DTStructureCombinePatch.xml */; };
+		2BEFB4B8118FCE160043B483 /* DTStructureBreakOutPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2A5A195310FF8C6F00C90673 /* DTStructureBreakOutPatch.xml */; };
+		2BEFB4BA118FCE380043B483 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167EFE841241C02AAC07 /* InfoPlist.strings */; };
+		2BEFB4BB118FCE400043B483 /* DTMultiExpressionPatchUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6304010C32624008A22D7 /* DTMultiExpressionPatchUI.xib */; };
+		2BEFB4BC118FCE400043B483 /* DTStructureBreakOutPatchUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5A196110FF8D7900C90673 /* DTStructureBreakOutPatchUI.xib */; };
+		2BEFB4BD118FCE400043B483 /* DTMultiSplitterPatchUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AC86FDF110A4698006CE09E /* DTMultiSplitterPatchUI.xib */; };
+		2BEFB4D4118FDDB20043B483 /* DTMultiExpressionPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AA971D10093C47000986A3 /* DTMultiExpressionPatch.m */; };
+		2BEFB4D5118FDDB40043B483 /* DTMultiExpressionPatchUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6304810C329E7008A22D7 /* DTMultiExpressionPatchUI.m */; };
+		2BEFB4D6118FDDB50043B483 /* DTMultiSplitterPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86FD4110A263C006CE09E /* DTMultiSplitterPatch.m */; };
+		2BEFB4D7118FDDB80043B483 /* DTMultiSplitterPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2AC86FD7110A267E006CE09E /* DTMultiSplitterPatch.xml */; };
+		2BEFB4D8118FDDBA0043B483 /* DTMultiSplitterPatchUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86FDC110A4654006CE09E /* DTMultiSplitterPatchUI.m */; };
+		2BEFB4D9118FDDBB0043B483 /* DTStructureBreakOutPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A194810FF8BDC00C90673 /* DTStructureBreakOutPatch.m */; };
+		2BEFB4DA118FDDBC0043B483 /* DTStructureBreakOutPatchUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A195610FF8C7C00C90673 /* DTStructureBreakOutPatchUI.m */; };
+		2BEFB4DB118FDDBF0043B483 /* DTStructureCombinePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEA329010E28E9000EEC39F /* DTStructureCombinePatch.m */; };
+		2BEFB4DC118FDDC00043B483 /* DTStructureEqualPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB9E1610CF06F50008DCB0 /* DTStructureEqualPatch.m */; };
+		2BEFB4DD118FDDC00043B483 /* DTTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC87000110A4AD3006CE09E /* DTTableView.m */; };
+		2BEFB4FC118FE02F0043B483 /* DTSampleHoldPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFB4FB118FE02F0043B483 /* DTSampleHoldPatch.m */; };
+		2BEFB4FE118FE0500043B483 /* DTSampleHoldPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2BEFB4FD118FE0500043B483 /* DTSampleHoldPatch.xml */; };
+		7533202D10091AF0003756A8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7533202C10091AF0003756A8 /* OpenGL.framework */; };
+		7533202F10091AF0003756A8 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7533202E10091AF0003756A8 /* Quartz.framework */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		E72970AD13B6E886001BBB7F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72970AC13B6E886001BBB7F /* IOKit.framework */; };
+		E72970D713B6EAC2001BBB7F /* DataToolsPrincipal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7533203710091B32003756A8 /* DataToolsPrincipal.m */; };
+		E729718513B6EAC8001BBB7F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72970AC13B6E886001BBB7F /* IOKit.framework */; };
+		E729719413B6EC79001BBB7F /* ValueHistorianPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1FD3E12CACB2300F34002 /* ValueHistorianPatch.m */; };
+		E729719513B6EC7F001BBB7F /* DTOrderPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B21F26E1156A0C10099FED4 /* DTOrderPatch.m */; };
+		E729719613B6EC86001BBB7F /* DTMultiSplitterPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86FD4110A263C006CE09E /* DTMultiSplitterPatch.m */; };
+		E729719713B6EC9A001BBB7F /* DTStructureBreakOutPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A194810FF8BDC00C90673 /* DTStructureBreakOutPatch.m */; };
+		E729719813B6ECA1001BBB7F /* DTArrayPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0699C91180A16300375C3E /* DTArrayPatch.m */; };
+		E729719913B6ECA7001BBB7F /* DTStructurePopPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7D9A4B12C85CD2002E1EA8 /* DTStructurePopPatch.m */; };
+		E729719A13B6ECB3001BBB7F /* SpookyReceivePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA06EB510C99F8B006EAE78 /* SpookyReceivePatch.m */; };
+		E729719B13B6ECB7001BBB7F /* SpookySendPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA06EB710C99F8B006EAE78 /* SpookySendPatch.m */; };
+		E729719C13B6ECC5001BBB7F /* DTSampleHoldPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEFB4FB118FE02F0043B483 /* DTSampleHoldPatch.m */; };
+		E729719F13B6ECE9001BBB7F /* DTSpookyNexus.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B45F310EA73A300C320BA /* DTSpookyNexus.m */; };
+		E72971A013B6ECEF001BBB7F /* ValueHistorianPatchUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC1FD4112CACB2300F34002 /* ValueHistorianPatchUI.m */; };
+		E72971A113B6ECFB001BBB7F /* DTOrderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B21F28D1156A57D0099FED4 /* DTOrderManager.m */; };
+		E72971A213B6ED00001BBB7F /* DTMultiSplitterPatchUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC86FDC110A4654006CE09E /* DTMultiSplitterPatchUI.m */; };
+		E72971A313B6ED0C001BBB7F /* DTStructureBreakOutPatchUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A195610FF8C7C00C90673 /* DTStructureBreakOutPatchUI.m */; };
+		E78586E913E9F64A000BBF4B /* DTStructureKeyPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E78586E813E9F64A000BBF4B /* DTStructureKeyPatch.m */; };
+		E78586EB13E9F7DB000BBF4B /* DTStructureKeyPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = E78586EA13E9F7DB000BBF4B /* DTStructureKeyPatch.xml */; };
+		E785870513E9F967000BBF4B /* DTStructureKeyPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E78586E813E9F64A000BBF4B /* DTStructureKeyPatch.m */; };
+		E7DC161C134E0D1400DBDFC8 /* DTConvertToDataPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DC161B134E0D1400DBDFC8 /* DTConvertToDataPatch.m */; };
+		E7DC161D134E0D1400DBDFC8 /* DTConvertToDataPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DC161B134E0D1400DBDFC8 /* DTConvertToDataPatch.m */; };
+		E7DC1622134E0F9E00DBDFC8 /* DTConvertFromDataPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DC1621134E0F9E00DBDFC8 /* DTConvertFromDataPatch.m */; };
+		E7DC1623134E0F9E00DBDFC8 /* DTConvertFromDataPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DC1621134E0F9E00DBDFC8 /* DTConvertFromDataPatch.m */; };
+		E7DC1625134E10C900DBDFC8 /* TestDTConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DC1624134E10C900DBDFC8 /* TestDTConvert.m */; };
+		E7DC1663134E13A700DBDFC8 /* DTConvertToDataPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = E7DC1662134E13A700DBDFC8 /* DTConvertToDataPatch.xml */; };
+		E7DC1665134E13E600DBDFC8 /* DTConvertFromDataPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = E7DC1664134E13E600DBDFC8 /* DTConvertFromDataPatch.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B4232A312B2E18D000EFB30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5B49AC048680CD000E48DA;
+			remoteInfo = DataTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A083E8710E26521005E6670 /* DTStructureEqualPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTStructureEqualPatch.xml; sourceTree = "<group>"; };
+		2A083E8D10E26719005E6670 /* SpookyReceivePatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SpookyReceivePatch.xml; sourceTree = "<group>"; };
+		2A083E8F10E26719005E6670 /* SpookySendPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SpookySendPatch.xml; sourceTree = "<group>"; };
+		2A4B45F210EA73A300C320BA /* DTSpookyNexus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSpookyNexus.h; sourceTree = "<group>"; };
+		2A4B45F310EA73A300C320BA /* DTSpookyNexus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTSpookyNexus.m; sourceTree = "<group>"; };
+		2A5A194710FF8BDC00C90673 /* DTStructureBreakOutPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTStructureBreakOutPatch.h; sourceTree = "<group>"; };
+		2A5A194810FF8BDC00C90673 /* DTStructureBreakOutPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTStructureBreakOutPatch.m; sourceTree = "<group>"; };
+		2A5A195310FF8C6F00C90673 /* DTStructureBreakOutPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTStructureBreakOutPatch.xml; sourceTree = "<group>"; };
+		2A5A195510FF8C7C00C90673 /* DTStructureBreakOutPatchUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTStructureBreakOutPatchUI.h; sourceTree = "<group>"; };
+		2A5A195610FF8C7C00C90673 /* DTStructureBreakOutPatchUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTStructureBreakOutPatchUI.m; sourceTree = "<group>"; };
+		2A5A196110FF8D7900C90673 /* DTStructureBreakOutPatchUI.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DTStructureBreakOutPatchUI.xib; sourceTree = "<group>"; };
+		2A86CD9810D06BFE00864796 /* SkankySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkankySDK.framework; path = /Library/Frameworks/SkankySDK.framework; sourceTree = "<absolute>"; };
+		2AA06EB410C99F8B006EAE78 /* SpookyReceivePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpookyReceivePatch.h; sourceTree = "<group>"; };
+		2AA06EB510C99F8B006EAE78 /* SpookyReceivePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpookyReceivePatch.m; sourceTree = "<group>"; };
+		2AA06EB610C99F8B006EAE78 /* SpookySendPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpookySendPatch.h; sourceTree = "<group>"; };
+		2AA06EB710C99F8B006EAE78 /* SpookySendPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpookySendPatch.m; sourceTree = "<group>"; };
+		2AC86FD3110A263C006CE09E /* DTMultiSplitterPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMultiSplitterPatch.h; sourceTree = "<group>"; };
+		2AC86FD4110A263C006CE09E /* DTMultiSplitterPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMultiSplitterPatch.m; sourceTree = "<group>"; };
+		2AC86FD7110A267E006CE09E /* DTMultiSplitterPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTMultiSplitterPatch.xml; sourceTree = "<group>"; };
+		2AC86FDB110A4654006CE09E /* DTMultiSplitterPatchUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMultiSplitterPatchUI.h; sourceTree = "<group>"; };
+		2AC86FDC110A4654006CE09E /* DTMultiSplitterPatchUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMultiSplitterPatchUI.m; sourceTree = "<group>"; };
+		2AC86FDF110A4698006CE09E /* DTMultiSplitterPatchUI.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DTMultiSplitterPatchUI.xib; sourceTree = "<group>"; };
+		2AC86FFF110A4AD3006CE09E /* DTTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTableView.h; sourceTree = "<group>"; };
+		2AC87000110A4AD3006CE09E /* DTTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTableView.m; sourceTree = "<group>"; };
+		2ADB9E1510CF06F50008DCB0 /* DTStructureEqualPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTStructureEqualPatch.h; sourceTree = "<group>"; };
+		2ADB9E1610CF06F50008DCB0 /* DTStructureEqualPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTStructureEqualPatch.m; sourceTree = "<group>"; };
+		2AEA328F10E28E9000EEC39F /* DTStructureCombinePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTStructureCombinePatch.h; sourceTree = "<group>"; };
+		2AEA329010E28E9000EEC39F /* DTStructureCombinePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTStructureCombinePatch.m; sourceTree = "<group>"; };
+		2AEA329310E28F0900EEC39F /* DTStructureCombinePatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTStructureCombinePatch.xml; sourceTree = "<group>"; };
+		2B0699C81180A16300375C3E /* DTArrayPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTArrayPatch.h; sourceTree = "<group>"; };
+		2B0699C91180A16300375C3E /* DTArrayPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTArrayPatch.m; sourceTree = "<group>"; };
+		2B0699D21180A21300375C3E /* DTArrayPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTArrayPatch.xml; sourceTree = "<group>"; };
+		2B21F26D1156A0C10099FED4 /* DTOrderPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTOrderPatch.h; sourceTree = "<group>"; };
+		2B21F26E1156A0C10099FED4 /* DTOrderPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTOrderPatch.m; sourceTree = "<group>"; };
+		2B21F2701156A10B0099FED4 /* DTOrderPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTOrderPatch.xml; sourceTree = "<group>"; wrapsLines = 0; };
+		2B21F28C1156A57D0099FED4 /* DTOrderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTOrderManager.h; sourceTree = "<group>"; };
+		2B21F28D1156A57D0099FED4 /* DTOrderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTOrderManager.m; sourceTree = "<group>"; };
+		2B26D64712BF027F00B38B4C /* StructureMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructureMaker.h; sourceTree = "<group>"; };
+		2B26D64812BF027F00B38B4C /* StructureMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructureMaker.m; sourceTree = "<group>"; };
+		2B26D64912BF027F00B38B4C /* StructureMakerUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructureMakerUI.h; sourceTree = "<group>"; };
+		2B26D64A12BF027F00B38B4C /* StructureMakerUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructureMakerUI.m; sourceTree = "<group>"; };
+		2B26D64D12BF02AC00B38B4C /* StructureMaker.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = StructureMaker.xml; sourceTree = "<group>"; };
+		2B26D64E12BF02AC00B38B4C /* StructureMakerUI.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = StructureMakerUI.nib; sourceTree = "<group>"; };
+		2B42329912B2E156000EFB30 /* Tests.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B42329B12B2E156000EFB30 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		2B42329E12B2E169000EFB30 /* GHUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnit.framework; path = Library/Frameworks/GHUnit.framework; sourceTree = SDKROOT; };
+		2B4232A712B2E1E7000EFB30 /* SkankySDK-TestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SkankySDK-TestCase.m"; sourceTree = "<group>"; };
+		2B42338512B2EAF3000EFB30 /* TestDTMultiExpressionPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDTMultiExpressionPatch.m; sourceTree = "<group>"; };
+		2B7D975E12C7F33E002E1EA8 /* DTStructurePushPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTStructurePushPatch.h; sourceTree = "<group>"; };
+		2B7D975F12C7F33E002E1EA8 /* DTStructurePushPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTStructurePushPatch.m; sourceTree = "<group>"; };
+		2B7D976512C7F657002E1EA8 /* TestDTStructurePushPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDTStructurePushPatch.m; sourceTree = "<group>"; };
+		2B7D977412C7F755002E1EA8 /* DTStructurePushPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTStructurePushPatch.xml; sourceTree = "<group>"; };
+		2B7D9A4A12C85CD2002E1EA8 /* DTStructurePopPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTStructurePopPatch.h; sourceTree = "<group>"; };
+		2B7D9A4B12C85CD2002E1EA8 /* DTStructurePopPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTStructurePopPatch.m; sourceTree = "<group>"; };
+		2B7D9A4C12C85CD2002E1EA8 /* DTStructurePopPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTStructurePopPatch.xml; sourceTree = "<group>"; };
+		2BC1FCD012CA722400F34002 /* TestDTStructureCombinePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDTStructureCombinePatch.m; sourceTree = "<group>"; };
+		2BC1FD3D12CACB2300F34002 /* ValueHistorianPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueHistorianPatch.h; sourceTree = "<group>"; };
+		2BC1FD3E12CACB2300F34002 /* ValueHistorianPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueHistorianPatch.m; sourceTree = "<group>"; };
+		2BC1FD3F12CACB2300F34002 /* ValueHistorianPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ValueHistorianPatch.xml; sourceTree = "<group>"; };
+		2BC1FD4012CACB2300F34002 /* ValueHistorianPatchUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueHistorianPatchUI.h; sourceTree = "<group>"; };
+		2BC1FD4112CACB2300F34002 /* ValueHistorianPatchUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueHistorianPatchUI.m; sourceTree = "<group>"; };
+		2BC1FD4212CACB2300F34002 /* ValueHistorianPatchUI.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ValueHistorianPatchUI.xib; sourceTree = "<group>"; };
+		2BEFB4FA118FE02E0043B483 /* DTSampleHoldPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTSampleHoldPatch.h; sourceTree = "<group>"; };
+		2BEFB4FB118FE02F0043B483 /* DTSampleHoldPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTSampleHoldPatch.m; sourceTree = "<group>"; };
+		2BEFB4FD118FE0500043B483 /* DTSampleHoldPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTSampleHoldPatch.xml; sourceTree = "<group>"; };
+		2BF6304010C32624008A22D7 /* DTMultiExpressionPatchUI.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DTMultiExpressionPatchUI.xib; sourceTree = "<group>"; };
+		2BF6304710C329E7008A22D7 /* DTMultiExpressionPatchUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMultiExpressionPatchUI.h; sourceTree = "<group>"; };
+		2BF6304810C329E7008A22D7 /* DTMultiExpressionPatchUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMultiExpressionPatchUI.m; sourceTree = "<group>"; };
+		32DBCF630370AF2F00C91783 /* DataTools_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTools_Prefix.pch; sourceTree = "<group>"; };
+		7533202C10091AF0003756A8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		7533202E10091AF0003756A8 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		7533203610091B32003756A8 /* DataToolsPrincipal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataToolsPrincipal.h; sourceTree = "<group>"; };
+		7533203710091B32003756A8 /* DataToolsPrincipal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataToolsPrincipal.m; sourceTree = "<group>"; };
+		75AA971C10093C47000986A3 /* DTMultiExpressionPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTMultiExpressionPatch.h; sourceTree = "<group>"; };
+		75AA971D10093C47000986A3 /* DTMultiExpressionPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTMultiExpressionPatch.m; sourceTree = "<group>"; };
+		75AA972010093C5E000986A3 /* DTMultiExpressionPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTMultiExpressionPatch.xml; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* DataTools.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTools.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E72970AC13B6E886001BBB7F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		E78586E713E9F64A000BBF4B /* DTStructureKeyPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTStructureKeyPatch.h; sourceTree = "<group>"; };
+		E78586E813E9F64A000BBF4B /* DTStructureKeyPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTStructureKeyPatch.m; sourceTree = "<group>"; };
+		E78586EA13E9F7DB000BBF4B /* DTStructureKeyPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTStructureKeyPatch.xml; sourceTree = "<group>"; };
+		E7DC161A134E0D1300DBDFC8 /* DTConvertToDataPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConvertToDataPatch.h; sourceTree = "<group>"; };
+		E7DC161B134E0D1400DBDFC8 /* DTConvertToDataPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConvertToDataPatch.m; sourceTree = "<group>"; };
+		E7DC1620134E0F9E00DBDFC8 /* DTConvertFromDataPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConvertFromDataPatch.h; sourceTree = "<group>"; };
+		E7DC1621134E0F9E00DBDFC8 /* DTConvertFromDataPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConvertFromDataPatch.m; sourceTree = "<group>"; };
+		E7DC1624134E10C900DBDFC8 /* TestDTConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDTConvert.m; sourceTree = "<group>"; };
+		E7DC1662134E13A700DBDFC8 /* DTConvertToDataPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTConvertToDataPatch.xml; sourceTree = "<group>"; };
+		E7DC1664134E13E600DBDFC8 /* DTConvertFromDataPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTConvertFromDataPatch.xml; sourceTree = "<group>"; };
+		E7DCB2BD146DBF4D0030AD08 /* SkankySDK-TestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SkankySDK-TestCase.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B42329712B2E156000EFB30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B42329F12B2E169000EFB30 /* GHUnit.framework in Frameworks */,
+				2B4232AF12B2E251000EFB30 /* Cocoa.framework in Frameworks */,
+				2B4232B012B2E255000EFB30 /* Quartz.framework in Frameworks */,
+				E729718513B6EAC8001BBB7F /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				7533202D10091AF0003756A8 /* OpenGL.framework in Frameworks */,
+				7533202F10091AF0003756A8 /* Quartz.framework in Frameworks */,
+				E72970AD13B6E886001BBB7F /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* DataTools */ = {
+			isa = PBXGroup;
+			children = (
+				2B4232A612B2E1B5000EFB30 /* Tests */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = DataTools;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2B42329E12B2E169000EFB30 /* GHUnit.framework */,
+				2A86CD9810D06BFE00864796 /* SkankySDK.framework */,
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A5A196410FF8D8700C90673 /* XIB */,
+				2A5A196310FF8D8200C90673 /* XML */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167EFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7533203610091B32003756A8 /* DataToolsPrincipal.h */,
+				7533203710091B32003756A8 /* DataToolsPrincipal.m */,
+				2AC86FFF110A4AD3006CE09E /* DTTableView.h */,
+				2AC87000110A4AD3006CE09E /* DTTableView.m */,
+				75AA971B10093C25000986A3 /* Patches */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				7533202C10091AF0003756A8 /* OpenGL.framework */,
+				7533202E10091AF0003756A8 /* Quartz.framework */,
+				E72970AC13B6E886001BBB7F /* IOKit.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* DataTools.plugin */,
+				2B42329912B2E156000EFB30 /* Tests.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A5A194A10FF8C1800C90673 /* Spooky */ = {
+			isa = PBXGroup;
+			children = (
+				2A4B45F210EA73A300C320BA /* DTSpookyNexus.h */,
+				2A4B45F310EA73A300C320BA /* DTSpookyNexus.m */,
+				2AA06EB410C99F8B006EAE78 /* SpookyReceivePatch.h */,
+				2AA06EB510C99F8B006EAE78 /* SpookyReceivePatch.m */,
+				2AA06EB610C99F8B006EAE78 /* SpookySendPatch.h */,
+				2AA06EB710C99F8B006EAE78 /* SpookySendPatch.m */,
+			);
+			name = Spooky;
+			sourceTree = "<group>";
+		};
+		2A5A194B10FF8C2300C90673 /* Expression */ = {
+			isa = PBXGroup;
+			children = (
+				75AA971C10093C47000986A3 /* DTMultiExpressionPatch.h */,
+				75AA971D10093C47000986A3 /* DTMultiExpressionPatch.m */,
+				2BF6304710C329E7008A22D7 /* DTMultiExpressionPatchUI.h */,
+				2BF6304810C329E7008A22D7 /* DTMultiExpressionPatchUI.m */,
+			);
+			name = Expression;
+			sourceTree = "<group>";
+		};
+		2A5A194C10FF8C3000C90673 /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				2B26D64712BF027F00B38B4C /* StructureMaker.h */,
+				2B26D64812BF027F00B38B4C /* StructureMaker.m */,
+				2B26D64912BF027F00B38B4C /* StructureMakerUI.h */,
+				2B26D64A12BF027F00B38B4C /* StructureMakerUI.m */,
+				2ADB9E1510CF06F50008DCB0 /* DTStructureEqualPatch.h */,
+				2ADB9E1610CF06F50008DCB0 /* DTStructureEqualPatch.m */,
+				2AEA328F10E28E9000EEC39F /* DTStructureCombinePatch.h */,
+				2AEA329010E28E9000EEC39F /* DTStructureCombinePatch.m */,
+				2A5A194710FF8BDC00C90673 /* DTStructureBreakOutPatch.h */,
+				2A5A194810FF8BDC00C90673 /* DTStructureBreakOutPatch.m */,
+				2A5A195510FF8C7C00C90673 /* DTStructureBreakOutPatchUI.h */,
+				2A5A195610FF8C7C00C90673 /* DTStructureBreakOutPatchUI.m */,
+				2B0699C81180A16300375C3E /* DTArrayPatch.h */,
+				2B0699C91180A16300375C3E /* DTArrayPatch.m */,
+				2B7D975E12C7F33E002E1EA8 /* DTStructurePushPatch.h */,
+				2B7D975F12C7F33E002E1EA8 /* DTStructurePushPatch.m */,
+				2B7D9A4A12C85CD2002E1EA8 /* DTStructurePopPatch.h */,
+				2B7D9A4B12C85CD2002E1EA8 /* DTStructurePopPatch.m */,
+				E78586E713E9F64A000BBF4B /* DTStructureKeyPatch.h */,
+				E78586E813E9F64A000BBF4B /* DTStructureKeyPatch.m */,
+			);
+			name = Structure;
+			sourceTree = "<group>";
+		};
+		2A5A196310FF8D8200C90673 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				2BC1FD3F12CACB2300F34002 /* ValueHistorianPatch.xml */,
+				2B26D64D12BF02AC00B38B4C /* StructureMaker.xml */,
+				2A083E8D10E26719005E6670 /* SpookyReceivePatch.xml */,
+				2A083E8F10E26719005E6670 /* SpookySendPatch.xml */,
+				75AA972010093C5E000986A3 /* DTMultiExpressionPatch.xml */,
+				2A083E8710E26521005E6670 /* DTStructureEqualPatch.xml */,
+				2AEA329310E28F0900EEC39F /* DTStructureCombinePatch.xml */,
+				2A5A195310FF8C6F00C90673 /* DTStructureBreakOutPatch.xml */,
+				E78586EA13E9F7DB000BBF4B /* DTStructureKeyPatch.xml */,
+				2AC86FD7110A267E006CE09E /* DTMultiSplitterPatch.xml */,
+				2B21F2701156A10B0099FED4 /* DTOrderPatch.xml */,
+				2B0699D21180A21300375C3E /* DTArrayPatch.xml */,
+				2BEFB4FD118FE0500043B483 /* DTSampleHoldPatch.xml */,
+				2B7D977412C7F755002E1EA8 /* DTStructurePushPatch.xml */,
+				2B7D9A4C12C85CD2002E1EA8 /* DTStructurePopPatch.xml */,
+				E7DC1662134E13A700DBDFC8 /* DTConvertToDataPatch.xml */,
+				E7DC1664134E13E600DBDFC8 /* DTConvertFromDataPatch.xml */,
+			);
+			name = XML;
+			sourceTree = "<group>";
+		};
+		2A5A196410FF8D8700C90673 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				2BC1FD4212CACB2300F34002 /* ValueHistorianPatchUI.xib */,
+				2B26D64E12BF02AC00B38B4C /* StructureMakerUI.nib */,
+				2BF6304010C32624008A22D7 /* DTMultiExpressionPatchUI.xib */,
+				2A5A196110FF8D7900C90673 /* DTStructureBreakOutPatchUI.xib */,
+				2AC86FDF110A4698006CE09E /* DTMultiSplitterPatchUI.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		2AC86FD2110A2627006CE09E /* MultiSplitter */ = {
+			isa = PBXGroup;
+			children = (
+				2AC86FD3110A263C006CE09E /* DTMultiSplitterPatch.h */,
+				2AC86FD4110A263C006CE09E /* DTMultiSplitterPatch.m */,
+				2AC86FDB110A4654006CE09E /* DTMultiSplitterPatchUI.h */,
+				2AC86FDC110A4654006CE09E /* DTMultiSplitterPatchUI.m */,
+			);
+			name = MultiSplitter;
+			sourceTree = "<group>";
+		};
+		2B21F2891156A56E0099FED4 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				2B21F26D1156A0C10099FED4 /* DTOrderPatch.h */,
+				2B21F26E1156A0C10099FED4 /* DTOrderPatch.m */,
+				2B21F28C1156A57D0099FED4 /* DTOrderManager.h */,
+				2B21F28D1156A57D0099FED4 /* DTOrderManager.m */,
+			);
+			name = Order;
+			sourceTree = "<group>";
+		};
+		2B4232A612B2E1B5000EFB30 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E7DCB2BD146DBF4D0030AD08 /* SkankySDK-TestCase.h */,
+				2B4232A712B2E1E7000EFB30 /* SkankySDK-TestCase.m */,
+				2B42329B12B2E156000EFB30 /* Tests-Info.plist */,
+				2B42338512B2EAF3000EFB30 /* TestDTMultiExpressionPatch.m */,
+				2B7D976512C7F657002E1EA8 /* TestDTStructurePushPatch.m */,
+				2BC1FCD012CA722400F34002 /* TestDTStructureCombinePatch.m */,
+				E7DC1624134E10C900DBDFC8 /* TestDTConvert.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		2BC1FD3C12CACB0F00F34002 /* Value Historian */ = {
+			isa = PBXGroup;
+			children = (
+				2BC1FD3D12CACB2300F34002 /* ValueHistorianPatch.h */,
+				2BC1FD3E12CACB2300F34002 /* ValueHistorianPatch.m */,
+				2BC1FD4012CACB2300F34002 /* ValueHistorianPatchUI.h */,
+				2BC1FD4112CACB2300F34002 /* ValueHistorianPatchUI.m */,
+			);
+			name = "Value Historian";
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* DataTools_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		75AA971B10093C25000986A3 /* Patches */ = {
+			isa = PBXGroup;
+			children = (
+				2BC1FD3C12CACB0F00F34002 /* Value Historian */,
+				2B21F2891156A56E0099FED4 /* Order */,
+				2AC86FD2110A2627006CE09E /* MultiSplitter */,
+				2A5A194C10FF8C3000C90673 /* Structure */,
+				2A5A194B10FF8C2300C90673 /* Expression */,
+				2A5A194A10FF8C1800C90673 /* Spooky */,
+				E7DC1610134E0AE700DBDFC8 /* Convert */,
+				2BEFB4FA118FE02E0043B483 /* DTSampleHoldPatch.h */,
+				2BEFB4FB118FE02F0043B483 /* DTSampleHoldPatch.m */,
+			);
+			name = Patches;
+			sourceTree = "<group>";
+		};
+		E7DC1610134E0AE700DBDFC8 /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				E7DC161A134E0D1300DBDFC8 /* DTConvertToDataPatch.h */,
+				E7DC161B134E0D1400DBDFC8 /* DTConvertToDataPatch.m */,
+				E7DC1620134E0F9E00DBDFC8 /* DTConvertFromDataPatch.h */,
+				E7DC1621134E0F9E00DBDFC8 /* DTConvertFromDataPatch.m */,
+			);
+			name = Convert;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B42329812B2E156000EFB30 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B42329D12B2E157000EFB30 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				2B42329512B2E156000EFB30 /* Resources */,
+				2B42329612B2E156000EFB30 /* Sources */,
+				2B42329712B2E156000EFB30 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B4232A412B2E18D000EFB30 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 2B42329912B2E156000EFB30 /* Tests.plugin */;
+			productType = "com.apple.product-type.application";
+		};
+		8D5B49AC048680CD000E48DA /* DataTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "DataTools" */;
+			buildPhases = (
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				8D5B49AF048680CD000E48DA /* Resources */,
+				7533205110091C18003756A8 /* Post Process */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataTools;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = DataTools;
+			productReference = 8D5B49B6048680CD000E48DA /* DataTools.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "DataTools" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* DataTools */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* DataTools */,
+				2B42329812B2E156000EFB30 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B42329512B2E156000EFB30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEFB4BA118FCE380043B483 /* InfoPlist.strings in Resources */,
+				2BEFB4B5118FCE160043B483 /* DTMultiExpressionPatch.xml in Resources */,
+				2BEFB4BB118FCE400043B483 /* DTMultiExpressionPatchUI.xib in Resources */,
+				2BEFB4B6118FCE160043B483 /* DTStructureEqualPatch.xml in Resources */,
+				2BEFB4B3118FCE0E0043B483 /* SpookyReceivePatch.xml in Resources */,
+				2BEFB4B4118FCE160043B483 /* SpookySendPatch.xml in Resources */,
+				2BEFB4B7118FCE160043B483 /* DTStructureCombinePatch.xml in Resources */,
+				2BEFB4B8118FCE160043B483 /* DTStructureBreakOutPatch.xml in Resources */,
+				2BEFB4BC118FCE400043B483 /* DTStructureBreakOutPatchUI.xib in Resources */,
+				2BEFB4BD118FCE400043B483 /* DTMultiSplitterPatchUI.xib in Resources */,
+				2B21F2711156A10B0099FED4 /* DTOrderPatch.xml in Resources */,
+				2B0699D31180A21300375C3E /* DTArrayPatch.xml in Resources */,
+				2BEFB4D7118FDDB80043B483 /* DTMultiSplitterPatch.xml in Resources */,
+				2BEFB4FE118FE0500043B483 /* DTSampleHoldPatch.xml in Resources */,
+				2B26D66F12BF1BC600B38B4C /* StructureMaker.xml in Resources */,
+				2B26D67612BF1BFA00B38B4C /* StructureMakerUI.nib in Resources */,
+				2B7D97A112C7F7F9002E1EA8 /* DTStructurePushPatch.xml in Resources */,
+				2B7D9A4E12C85CD2002E1EA8 /* DTStructurePopPatch.xml in Resources */,
+				2BC1FD4412CACB2300F34002 /* ValueHistorianPatch.xml in Resources */,
+				2BC1FD4612CACB2300F34002 /* ValueHistorianPatchUI.xib in Resources */,
+				E7DC1663134E13A700DBDFC8 /* DTConvertToDataPatch.xml in Resources */,
+				E7DC1665134E13E600DBDFC8 /* DTConvertFromDataPatch.xml in Resources */,
+				E78586EB13E9F7DB000BBF4B /* DTStructureKeyPatch.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7533205110091C18003756A8 /* Post Process */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Post Process";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "php /Library/Frameworks/SkankySDK.framework/Resources/plugin-postprocess.php \"$TARGET_BUILD_DIR/$FULL_PRODUCT_NAME\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B42329612B2E156000EFB30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B4232A812B2E1E7000EFB30 /* SkankySDK-TestCase.m in Sources */,
+				2B42339712B2EB95000EFB30 /* DTMultiExpressionPatch.m in Sources */,
+				2B42339A12B2EB9B000EFB30 /* DTMultiExpressionPatchUI.m in Sources */,
+				2B42338612B2EAF3000EFB30 /* TestDTMultiExpressionPatch.m in Sources */,
+				2B26D64B12BF027F00B38B4C /* StructureMaker.m in Sources */,
+				2B26D64C12BF027F00B38B4C /* StructureMakerUI.m in Sources */,
+				2B7D976612C7F657002E1EA8 /* TestDTStructurePushPatch.m in Sources */,
+				2B7D976012C7F33E002E1EA8 /* DTStructurePushPatch.m in Sources */,
+				2BC1FCD412CA727300F34002 /* DTStructureCombinePatch.m in Sources */,
+				2BC1FCD712CA727C00F34002 /* TestDTStructureCombinePatch.m in Sources */,
+				2BC1FD0712CA744400F34002 /* DTStructureEqualPatch.m in Sources */,
+				E7DC161D134E0D1400DBDFC8 /* DTConvertToDataPatch.m in Sources */,
+				E7DC1623134E0F9E00DBDFC8 /* DTConvertFromDataPatch.m in Sources */,
+				E7DC1625134E10C900DBDFC8 /* TestDTConvert.m in Sources */,
+				E72970D713B6EAC2001BBB7F /* DataToolsPrincipal.m in Sources */,
+				E729719413B6EC79001BBB7F /* ValueHistorianPatch.m in Sources */,
+				E729719513B6EC7F001BBB7F /* DTOrderPatch.m in Sources */,
+				E729719613B6EC86001BBB7F /* DTMultiSplitterPatch.m in Sources */,
+				E729719713B6EC9A001BBB7F /* DTStructureBreakOutPatch.m in Sources */,
+				E729719813B6ECA1001BBB7F /* DTArrayPatch.m in Sources */,
+				E729719913B6ECA7001BBB7F /* DTStructurePopPatch.m in Sources */,
+				E729719A13B6ECB3001BBB7F /* SpookyReceivePatch.m in Sources */,
+				E729719B13B6ECB7001BBB7F /* SpookySendPatch.m in Sources */,
+				E729719C13B6ECC5001BBB7F /* DTSampleHoldPatch.m in Sources */,
+				E729719F13B6ECE9001BBB7F /* DTSpookyNexus.m in Sources */,
+				E72971A013B6ECEF001BBB7F /* ValueHistorianPatchUI.m in Sources */,
+				E72971A113B6ECFB001BBB7F /* DTOrderManager.m in Sources */,
+				E72971A213B6ED00001BBB7F /* DTMultiSplitterPatchUI.m in Sources */,
+				E72971A313B6ED0C001BBB7F /* DTStructureBreakOutPatchUI.m in Sources */,
+				E785870513E9F967000BBF4B /* DTStructureKeyPatch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B21F26F1156A0C10099FED4 /* DTOrderPatch.m in Sources */,
+				2B21F28E1156A57D0099FED4 /* DTOrderManager.m in Sources */,
+				2B028F421163BAC200C4E8B3 /* DataToolsPrincipal.m in Sources */,
+				2B1ECB321164055F00DDF2B4 /* DTSpookyNexus.m in Sources */,
+				2B1ECB331164056000DDF2B4 /* SpookyReceivePatch.m in Sources */,
+				2B1ECB341164056100DDF2B4 /* SpookySendPatch.m in Sources */,
+				2B0699CA1180A16300375C3E /* DTArrayPatch.m in Sources */,
+				2BEFB4D4118FDDB20043B483 /* DTMultiExpressionPatch.m in Sources */,
+				2BEFB4D5118FDDB40043B483 /* DTMultiExpressionPatchUI.m in Sources */,
+				2BEFB4D6118FDDB50043B483 /* DTMultiSplitterPatch.m in Sources */,
+				2BEFB4D8118FDDBA0043B483 /* DTMultiSplitterPatchUI.m in Sources */,
+				2BEFB4D9118FDDBB0043B483 /* DTStructureBreakOutPatch.m in Sources */,
+				2BEFB4DA118FDDBC0043B483 /* DTStructureBreakOutPatchUI.m in Sources */,
+				2BEFB4DB118FDDBF0043B483 /* DTStructureCombinePatch.m in Sources */,
+				2BEFB4DC118FDDC00043B483 /* DTStructureEqualPatch.m in Sources */,
+				2BEFB4DD118FDDC00043B483 /* DTTableView.m in Sources */,
+				2BEFB4FC118FE02F0043B483 /* DTSampleHoldPatch.m in Sources */,
+				2B26D65612BF199700B38B4C /* StructureMaker.m in Sources */,
+				2B26D65712BF199B00B38B4C /* StructureMakerUI.m in Sources */,
+				2B7D977B12C7F7A2002E1EA8 /* DTStructurePushPatch.m in Sources */,
+				2B7D9A4D12C85CD2002E1EA8 /* DTStructurePopPatch.m in Sources */,
+				2BC1FD4312CACB2300F34002 /* ValueHistorianPatch.m in Sources */,
+				2BC1FD4512CACB2300F34002 /* ValueHistorianPatchUI.m in Sources */,
+				E7DC161C134E0D1400DBDFC8 /* DTConvertToDataPatch.m in Sources */,
+				E7DC1622134E0F9E00DBDFC8 /* DTConvertFromDataPatch.m in Sources */,
+				E78586E913E9F64A000BBF4B /* DTStructureKeyPatch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B4232A412B2E18D000EFB30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5B49AC048680CD000E48DA /* DataTools */;
+			targetProxy = 2B4232A312B2E18D000EFB30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DataTools_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = DataTools;
+			};
+			name = Release;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_STRICT_ALIASING = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = $TMPDIR/$FULL_PRODUCT_NAME/build;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		2B42329C12B2E157000EFB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DataTools_Prefix.pch;
+				INFOPLIST_FILE = "Tests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Tests;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "DataTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "DataTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B42329D12B2E157000EFB30 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B42329C12B2E157000EFB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch generates an Array (an indexed Structure).  As you connect cables to the input ports, more input ports automatically appear.
+		
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Array</string>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+        <key>outputArray</key>
+        <dict>
+            <key>description</key>
+            <string>Structure containing the built Array</string>
+            <key>name</key>
+            <string>Structure</string>
+        </dict>
+	</dict>
+</dict>
+</plist>

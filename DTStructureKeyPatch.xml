@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch outputs a key of a structure.
+
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Structure Key</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputStructure</key>
+		<dict>
+			<key>description</key>
+			<string>Structure</string>
+			<key>name</key>
+			<string>Structure</string>
+		</dict>
+		<key>inputIndex</key>
+		<dict>
+			<key>description</key>
+			<string>Index</string>
+			<key>name</key>
+			<string>Index</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputKey</key>
+		<dict>
+			<key>description</key>
+			<string>Key</string>
+			<key>name</key>
+			<string>Key</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

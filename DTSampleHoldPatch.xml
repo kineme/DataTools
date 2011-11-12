@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright © 2010 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch is similar to the built-in Sample &amp; Hold patch, except that the Value is preserved when the composition is stopped and restarted, and is also saved to disk as part of the composition.
+		
+http://kineme.net/</string>
+		<key>name</key>
+		<string>Sample &amp; Hold</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputValue</key>
+		<dict>
+			<key>description</key>
+			<string>Value</string>
+			<key>name</key>
+			<string>Value</string>
+		</dict>
+		<key>inputSampling</key>
+		<dict>
+			<key>description</key>
+			<string>When True, the input Value is copied to the output Value.  When False, the most recent Value is preserved.</string>
+			<key>name</key>
+			<string>Sampling</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+        <key>outputValue</key>
+        <dict>
+            <key>description</key>
+            <string>Value</string>
+            <key>name</key>
+            <string>Value</string>
+        </dict>
+	</dict>
+</dict>
+</plist>
