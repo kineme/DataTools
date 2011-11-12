@@ -675,6 +675,7 @@
 				INFOPLIST_FILE = Info.plist;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = DataTools;
+				SDKROOT = macosx10.5;
 			};
 			name = Release;
 		};
