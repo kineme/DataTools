@@ -37,7 +37,6 @@
 	{
 		NSData *data = [[inputString stringValue] dataUsingEncoding:NSUTF8StringEncoding];
 		[outputRawData setRawValue:data];
-		NSLog(@"%@", data);
 	}
 	
 	return YES;
