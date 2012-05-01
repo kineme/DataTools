@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>name</key>
+		<string>String To Data</string>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2011 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch converts a string to UTF8-encoded bytes. 
+		
+http://kineme.net/</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputString</key>
+		<dict>
+			<key>name</key>
+			<string>String</string>
+			<key>description</key>
+			<string>The string to convert</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputBar</key>
+		<dict>
+			<key>name</key>
+			<string>Raw Data</string>
+			<key>description</key>
+			<string>The UTF8-encoded bytes of the string</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

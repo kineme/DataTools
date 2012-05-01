@@ -1,6 +1,7 @@
 #import "SkankySDK/SkankySDK-TestCase.h"
 #import "DTConvertToDataPatch.h"
 #import "DTConvertFromDataPatch.h"
+#import "DTStringToDataPatch.h"
 
 
 @interface TestDTConvert : SkankySDK_TestCase
@@ -40,6 +41,19 @@
 	
 	[toPatch release]; 
 	[fromPatch release]; 
+}
+
+- (void)testStringToData
+{
+	DTStringToDataPatch *patch = [[DTStringToDataPatch alloc] initWithIdentifier:nil];
+	
+	NSString *originalString = @"abc";
+	[self setInputValue:originalString forPort:@"inputString" onPatch:patch];
+	[self executePatch:patch];
+	NSData *data = [self getOutputForPort:@"outputRawData" onPatch:patch];
+	NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+	GHAssertEqualStrings(originalString, dataString, @"");
+	[dataString release];
 }
 
 @end
