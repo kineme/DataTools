@@ -17,6 +17,7 @@
 #import "DTConvertToDataPatch.h"
 #import "DTConvertFromDataPatch.h"
 #import "DTStringToDataPatch.h"
+#import "DTImageToDataPatch.h"
 
 #import "SpookySendPatch.h"
 #import "SpookyReceivePatch.h"
@@ -79,6 +80,7 @@ id DTSplitterInit(id self, SEL sel, NSString *identifier)
 	KIRegisterPatch(DTConvertToDataPatch); 
 	KIRegisterPatch(DTConvertFromDataPatch); 
 	KIRegisterPatch(DTStringToDataPatch);
+	KIRegisterPatch(DTImageToDataPatch);
 
 /* disabled for now, since this hack results in input splitters that require DataTools (which is kinda misleading)
 	{

@@ -87,6 +87,9 @@
 		E74FE0A015502957009E29D6 /* DTStringToDataPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E74FE09F15502957009E29D6 /* DTStringToDataPatch.m */; };
 		E74FE0A115502957009E29D6 /* DTStringToDataPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E74FE09F15502957009E29D6 /* DTStringToDataPatch.m */; };
 		E74FE0CB15502E3F009E29D6 /* DTStringToDataPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = E74FE0CA15502E3F009E29D6 /* DTStringToDataPatch.xml */; };
+		E74FE11F15505A7F009E29D6 /* DTImageToDataPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E74FE11E15505A7F009E29D6 /* DTImageToDataPatch.m */; };
+		E74FE12015505A7F009E29D6 /* DTImageToDataPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E74FE11E15505A7F009E29D6 /* DTImageToDataPatch.m */; };
+		E74FE12215505A8D009E29D6 /* DTImageToDataPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = E74FE12115505A8D009E29D6 /* DTImageToDataPatch.xml */; };
 		E78586E913E9F64A000BBF4B /* DTStructureKeyPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E78586E813E9F64A000BBF4B /* DTStructureKeyPatch.m */; };
 		E78586EB13E9F7DB000BBF4B /* DTStructureKeyPatch.xml in Resources */ = {isa = PBXBuildFile; fileRef = E78586EA13E9F7DB000BBF4B /* DTStructureKeyPatch.xml */; };
 		E785870513E9F967000BBF4B /* DTStructureKeyPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E78586E813E9F64A000BBF4B /* DTStructureKeyPatch.m */; };
@@ -194,6 +197,9 @@
 		E74FE09E15502957009E29D6 /* DTStringToDataPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTStringToDataPatch.h; sourceTree = "<group>"; };
 		E74FE09F15502957009E29D6 /* DTStringToDataPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTStringToDataPatch.m; sourceTree = "<group>"; };
 		E74FE0CA15502E3F009E29D6 /* DTStringToDataPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTStringToDataPatch.xml; sourceTree = "<group>"; };
+		E74FE11D15505A7F009E29D6 /* DTImageToDataPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTImageToDataPatch.h; sourceTree = "<group>"; };
+		E74FE11E15505A7F009E29D6 /* DTImageToDataPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTImageToDataPatch.m; sourceTree = "<group>"; };
+		E74FE12115505A8D009E29D6 /* DTImageToDataPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTImageToDataPatch.xml; sourceTree = "<group>"; };
 		E78586E713E9F64A000BBF4B /* DTStructureKeyPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTStructureKeyPatch.h; sourceTree = "<group>"; };
 		E78586E813E9F64A000BBF4B /* DTStructureKeyPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTStructureKeyPatch.m; sourceTree = "<group>"; };
 		E78586EA13E9F7DB000BBF4B /* DTStructureKeyPatch.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DTStructureKeyPatch.xml; sourceTree = "<group>"; };
@@ -371,6 +377,7 @@
 				E7DC1662134E13A700DBDFC8 /* DTConvertToDataPatch.xml */,
 				E7DC1664134E13E600DBDFC8 /* DTConvertFromDataPatch.xml */,
 				E74FE0CA15502E3F009E29D6 /* DTStringToDataPatch.xml */,
+				E74FE12115505A8D009E29D6 /* DTImageToDataPatch.xml */,
 			);
 			name = XML;
 			sourceTree = "<group>";
@@ -467,6 +474,8 @@
 				E7DC1621134E0F9E00DBDFC8 /* DTConvertFromDataPatch.m */,
 				E74FE09E15502957009E29D6 /* DTStringToDataPatch.h */,
 				E74FE09F15502957009E29D6 /* DTStringToDataPatch.m */,
+				E74FE11D15505A7F009E29D6 /* DTImageToDataPatch.h */,
+				E74FE11E15505A7F009E29D6 /* DTImageToDataPatch.m */,
 			);
 			name = Convert;
 			sourceTree = "<group>";
@@ -572,6 +581,7 @@
 				E7DC1665134E13E600DBDFC8 /* DTConvertFromDataPatch.xml in Resources */,
 				E78586EB13E9F7DB000BBF4B /* DTStructureKeyPatch.xml in Resources */,
 				E74FE0CB15502E3F009E29D6 /* DTStringToDataPatch.xml in Resources */,
+				E74FE12215505A8D009E29D6 /* DTImageToDataPatch.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +640,7 @@
 				E72971A313B6ED0C001BBB7F /* DTStructureBreakOutPatchUI.m in Sources */,
 				E785870513E9F967000BBF4B /* DTStructureKeyPatch.m in Sources */,
 				E74FE0A115502957009E29D6 /* DTStringToDataPatch.m in Sources */,
+				E74FE12015505A7F009E29D6 /* DTImageToDataPatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +675,7 @@
 				E7DC1622134E0F9E00DBDFC8 /* DTConvertFromDataPatch.m in Sources */,
 				E78586E913E9F64A000BBF4B /* DTStructureKeyPatch.m in Sources */,
 				E74FE0A015502957009E29D6 /* DTStringToDataPatch.m in Sources */,
+				E74FE11F15505A7F009E29D6 /* DTImageToDataPatch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,7 +699,6 @@
 				INFOPLIST_FILE = Info.plist;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = DataTools;
-				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = macosx10.5;
 			};
 			name = Release;
@@ -738,7 +749,6 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = Tests;
-				RUN_CLANG_STATIC_ANALYZER = NO;
 			};
 			name = Release;
 		};

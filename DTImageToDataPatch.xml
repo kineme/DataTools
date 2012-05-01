@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>name</key>
+		<string>Image To Data</string>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2011 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch converts an image to raw data bytes. 
+		
+http://kineme.net/</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputImage</key>
+		<dict>
+			<key>name</key>
+			<string>Image</string>
+			<key>description</key>
+			<string>The image to convert</string>
+		</dict>
+		<key>inputImageFileType</key>
+		<dict>
+			<key>name</key>
+			<string>Image Representation</string>
+			<key>description</key>
+			<string>The image representation to use when converting to bytes</string>
+			<key>menu</key>
+			<array>
+				<string>TIFF</string>
+				<string>BMP</string>
+				<string>GIF</string>
+				<string>JPEG</string>
+				<string>PNG</string>
+				<string>JPEG2000</string>
+			</array>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputRawData</key>
+		<dict>
+			<key>name</key>
+			<string>Raw Data</string>
+			<key>description</key>
+			<string>The bytes of the image</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

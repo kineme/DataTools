@@ -2,6 +2,7 @@
 #import "DTConvertToDataPatch.h"
 #import "DTConvertFromDataPatch.h"
 #import "DTStringToDataPatch.h"
+#import "DTImageToDataPatch.h"
 
 
 @interface TestDTConvert : SkankySDK_TestCase
@@ -54,6 +55,36 @@
 	NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 	GHAssertEqualStrings(originalString, dataString, @"");
 	[dataString release];
+}
+
+- (void)testImageToData
+{
+	DTImageToDataPatch *patch = [[DTImageToDataPatch alloc] initWithIdentifier:nil];
+	
+	// TIFF image -> TIFF data
+	NSImage *compressedTiffNSImage = [[NSImage alloc] initWithContentsOfFile:@"/Library/User Pictures/Fun/Pizza.tif"];
+	NSData *inTiffData = [compressedTiffNSImage TIFFRepresentationUsingCompression:NSTIFFCompressionNone factor:0];
+	NSImage *inTiffNSImage = [[NSImage alloc] initWithData:inTiffData];
+	QCImage *inTiffQCImage = [[QCImage alloc] initWithNSImage:inTiffNSImage options:nil];
+	[self setInputValue:inTiffQCImage forPort:@"inputImage" onPatch:patch];
+	[self setInputValue:[NSNumber numberWithInt:NSTIFFFileType] forPort:@"inputImageFileType" onPatch:patch];
+	[self executePatch:patch];
+	NSData *outTiffData = [self getOutputForPort:@"outputRawData" onPatch:patch];
+	const unsigned char expectedTiffBytes[] = { 0x4d, 0x4d, 0x00, 0x2a };
+	NSData *expectedTiffData = [NSData dataWithBytes:(const void *)expectedTiffBytes length:4];
+	GHAssertEqualObjects(expectedTiffData, [outTiffData subdataWithRange:NSMakeRange(0, 4)], @"");
+//	NSBitmapImageRep *outTiffImageRep = [NSBitmapImageRep imageRepWithData:outTiffData];
+//	GHAssertEqualObjects(inTiffData, [outTiffImageRep TIFFRepresentation], @"");
+	
+	// JPEG image -> PNG data
+	QCImage *inJpegQCImage = [[QCImage alloc] initWithFile:@"/Library/Desktop Pictures/Solid Colors/Solid Aqua Blue.png" options:nil];
+	[self setInputValue:inJpegQCImage forPort:@"inputImage" onPatch:patch];
+	[self setInputValue:[NSNumber numberWithInt:NSPNGFileType] forPort:@"inputImageFileType" onPatch:patch];
+	[self executePatch:patch];
+	NSData *outPngData = [self getOutputForPort:@"outputRawData" onPatch:patch];
+	const unsigned char expectedPngBytes[] = { 0x89, 0x50, 0x4e, 0x47 };
+	NSData *expectedPngData = [NSData dataWithBytes:(const void *)expectedPngBytes length:4];
+	GHAssertEqualObjects(expectedPngData, [outPngData subdataWithRange:NSMakeRange(0, 4)], @"");
 }
 
 @end
