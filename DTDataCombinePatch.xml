@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nodeAttributes</key>
+	<dict>
+		<key>name</key>
+		<string>Data Combine</string>
+		<key>categories</key>
+		<array>
+			<string>Kineme DataTools</string>
+		</array>
+		<key>copyright</key>
+		<string>Copyright 2011 Kosada Incorporated. All rights reserved.</string>
+		<key>description</key>
+		<string>This patch combines two raw data objects by concatenating them. 
+		
+http://kineme.net/</string>
+	</dict>
+	<key>inputAttributes</key>
+	<dict>
+		<key>inputRawData1</key>
+		<dict>
+			<key>name</key>
+			<string>Raw Data 1</string>
+			<key>description</key>
+			<string>Raw data bytes</string>
+		</dict>
+		<key>inputRawData2</key>
+		<dict>
+			<key>name</key>
+			<string>Raw Data 2</string>
+			<key>description</key>
+			<string>Raw data bytes</string>
+		</dict>
+	</dict>
+	<key>outputAttributes</key>
+	<dict>
+		<key>outputRawData</key>
+		<dict>
+			<key>name</key>
+			<string>Combined Raw Data</string>
+			<key>description</key>
+			<string>Raw data bytes of the inputs concatenated</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

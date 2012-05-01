@@ -3,6 +3,7 @@
 #import "DTConvertFromDataPatch.h"
 #import "DTStringToDataPatch.h"
 #import "DTImageToDataPatch.h"
+#import "DTDataCombinePatch.h"
 
 
 @interface TestDTConvert : SkankySDK_TestCase
@@ -85,6 +86,20 @@
 	const unsigned char expectedPngBytes[] = { 0x89, 0x50, 0x4e, 0x47 };
 	NSData *expectedPngData = [NSData dataWithBytes:(const void *)expectedPngBytes length:4];
 	GHAssertEqualObjects(expectedPngData, [outPngData subdataWithRange:NSMakeRange(0, 4)], @"");
+}
+
+- (void)testDataCombine
+{
+	DTDataCombinePatch *patch = [[DTDataCombinePatch alloc] initWithIdentifier:nil];
+	
+	NSData *inData1 = [@"first" dataUsingEncoding:NSUTF8StringEncoding];
+	NSData *inData2 = [@"second" dataUsingEncoding:NSUTF8StringEncoding];
+	[self setInputValue:inData1 forPort:@"inputRawData1" onPatch:patch];
+	[self setInputValue:inData2 forPort:@"inputRawData2" onPatch:patch];
+	[self executePatch:patch];
+	NSData *outData = [self getOutputForPort:@"outputRawData" onPatch:patch];
+	NSString *outString = [[NSString alloc] initWithData:outData encoding:NSUTF8StringEncoding];
+	GHAssertEqualStrings(@"firstsecond", outString, @"");
 }
 
 @end
