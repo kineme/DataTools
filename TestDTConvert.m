@@ -76,6 +76,7 @@
 	GHAssertEqualObjects(expectedTiffData, [outTiffData subdataWithRange:NSMakeRange(0, 4)], @"");
 //	NSBitmapImageRep *outTiffImageRep = [NSBitmapImageRep imageRepWithData:outTiffData];
 //	GHAssertEqualObjects(inTiffData, [outTiffImageRep TIFFRepresentation], @"");
+	[outTiffData writeToFile:@"/tmp/TestDTConvert_outTiff.tif" atomically:NO];
 	
 	// JPEG image -> PNG data
 	QCImage *inJpegQCImage = [[QCImage alloc] initWithFile:@"/Library/Desktop Pictures/Solid Colors/Solid Aqua Blue.png" options:nil];
@@ -86,6 +87,7 @@
 	const unsigned char expectedPngBytes[] = { 0x89, 0x50, 0x4e, 0x47 };
 	NSData *expectedPngData = [NSData dataWithBytes:(const void *)expectedPngBytes length:4];
 	GHAssertEqualObjects(expectedPngData, [outPngData subdataWithRange:NSMakeRange(0, 4)], @"");
+	[outPngData writeToFile:@"/tmp/TestDTConvert_outPng.png" atomically:NO];
 }
 
 - (void)testDataCombine
