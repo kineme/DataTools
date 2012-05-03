@@ -5,7 +5,7 @@
 	<key>nodeAttributes</key>
 	<dict>
 		<key>name</key>
-		<string>Convert From Data</string>
+		<string>Unserialize Virtual</string>
 		<key>categories</key>
 		<array>
 			<string>Kineme DataTools</string>
@@ -13,12 +13,13 @@
 		<key>copyright</key>
 		<string>Copyright 2011 Kosada Incorporated. All rights reserved.</string>
 		<key>description</key>
-		<string>This patch converts raw data bytes to a Quartz Composer data type. 
+		<string>This patch converts serialized data bytes back to a Quartz Composer data type. 
 		
 http://kineme.net/</string>
 		<key>aliasNames</key>
 		<array>
 			<string>serialize</string>
+			<string>convert from data</string>
 		</array>
 	</dict>
 	<key>inputAttributes</key>
@@ -28,7 +29,7 @@ http://kineme.net/</string>
 			<key>name</key>
 			<string>Raw Data</string>
 			<key>description</key>
-			<string>The raw data</string>
+			<string>The serialized data</string>
 		</dict>
 	</dict>
 	<key>outputAttributes</key>
@@ -38,7 +39,7 @@ http://kineme.net/</string>
 			<key>name</key>
 			<string>Value</string>
 			<key>description</key>
-			<string>The value resulting from the conversion</string>
+			<string>The unserialized value</string>
 		</dict>
 	</dict>
 </dict>

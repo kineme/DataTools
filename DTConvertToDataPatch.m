@@ -25,7 +25,7 @@
 {
 	if(self = [super initWithIdentifier:identifier])
 	{
-		[[self userInfo] setObject:@"Kineme Convert To Data" forKey:@"name"];
+		[[self userInfo] setObject:@"Kineme Serialize Virtual" forKey:@"name"];
 	}
 	return self;
 }
