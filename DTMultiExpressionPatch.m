@@ -56,31 +56,23 @@
 		[results addObject:[p value] forKey:[p key]];
 
 	// evaluate expressions sequentially
-	NSUInteger i;
-	// FIXME:  use fast enumeration (still need a counter for the [results addObject... line though)
-	for(i=0;i<[expressions count];++i)
+	unsigned int i = 0;
+	for(QCMathematicalExpression *expr in expressions)
 	{
-		QCMathematicalExpression *expr = [expressions objectAtIndex:i];
-
 		// assign known variables
 		NSArray *variables = [expr variables];
-		// FIXME: don't use i (it's "safe", but ugly since i's already defined in higher scope)
-		// FIXME: use fast enumeration
-//		for(NSUInteger i=0;i<[variables count];++i)
-//		{
-//			NSString *v = [variables objectAtIndex:i];
-//			[expr setVariable:[[results objectForKey:v] doubleValue] atIndex:i];
-//		}
+		
 		unsigned int n = 0;
 		for(NSString *i in variables)
 		{
-			NSString *v = i;//[variables objectAtIndex:i];
+			NSString *v = i;
 			[expr setVariable:[[results objectForKey:v] doubleValue] atIndex:n];
 			n++;
 		}
 
 		// evaluate and assign result
 		[results addObject:[NSNumber numberWithDouble:[expr evaluate]] forKey:[resultVariables objectAtIndex:i]];
+		i++;
 	}
 
 	for(QCPort *p in [self resultPorts])
