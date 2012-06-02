@@ -66,10 +66,17 @@
 		NSArray *variables = [expr variables];
 		// FIXME: don't use i (it's "safe", but ugly since i's already defined in higher scope)
 		// FIXME: use fast enumeration
-		for(NSUInteger i=0;i<[variables count];++i)
+//		for(NSUInteger i=0;i<[variables count];++i)
+//		{
+//			NSString *v = [variables objectAtIndex:i];
+//			[expr setVariable:[[results objectForKey:v] doubleValue] atIndex:i];
+//		}
+		unsigned int n = 0;
+		for(NSString *i in variables)
 		{
-			NSString *v = [variables objectAtIndex:i];
-			[expr setVariable:[[results objectForKey:v] doubleValue] atIndex:i];
+			NSString *v = i;//[variables objectAtIndex:i];
+			[expr setVariable:[[results objectForKey:v] doubleValue] atIndex:n];
+			n++;
 		}
 
 		// evaluate and assign result
