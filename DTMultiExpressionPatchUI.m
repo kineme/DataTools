@@ -3,6 +3,8 @@
 
 @implementation DTMultiExpressionPatchUI
 
+@synthesize programmablePatchView;
+
 + (NSString *)viewNibName
 {
     return @"DTMultiExpressionPatchUI";
