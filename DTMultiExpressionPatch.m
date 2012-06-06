@@ -137,6 +137,7 @@
 			{
 				resultVariable = [c objectAtIndex:0];
 				resultVariable = [resultVariable stringByTrimmingCharactersInSet:whitespaceCharacterSet];
+				
 				if( ![resultVariable length] )
 				{
 					if([errors count] == 0)
@@ -146,6 +147,21 @@
 						[errors setObject:[NSNumber numberWithUnsignedInt:lineNumber] forKey:@"line"];
 					}
 					continue;
+				}
+				
+				if([c count] > 1)
+				{
+//					NSLog(@"first var `%@`,  second var `%@`", resultVariable, [[c objectAtIndex:1] stringByTrimmingCharactersInSet:whitespaceCharacterSet]);
+					if( [resultVariable isEqualToString:[[c objectAtIndex:1] stringByTrimmingCharactersInSet:whitespaceCharacterSet]] )
+					{
+						if([errors count] == 0)
+						{
+							[errors setObject:(id)kCFBooleanTrue forKey:@"error"];
+							[errors setObject:@"Equation's left and right sides cannot match." forKey:@"message"];
+							[errors setObject:[NSNumber numberWithUnsignedInt:lineNumber] forKey:@"line"];	
+						}
+						continue;
+					}
 				}
 				
 				if( strspn([resultVariable UTF8String],"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789") != [resultVariable length] )
@@ -191,7 +207,7 @@
 					}
 					continue;
 				}
-
+				
 				[resultVariables addObject:resultVariable];
 				[resultList addObject:parameterInfo forKey:resultVariable];
 				[resultNameList addObject:line forKey:resultVariable];
@@ -228,7 +244,7 @@
 		}
 		++lineNumber;
 	}
-
+	
 	[self setParameterList:inputParams];
 	[self setResultList:resultList];
 
