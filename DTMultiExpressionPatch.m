@@ -162,7 +162,7 @@
 				}
 			
 				if( strspn([resultVariable UTF8String],"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789") != [resultVariable length] || 
-				   strspn([rightSide UTF8String],"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789^!*%/( ).+-") != [rightSide length] )
+				   strspn([rightSide UTF8String],"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789^!*%/().+-") != [rightSide length] )
 				{
 					if([errors count] == 0)
 					{
