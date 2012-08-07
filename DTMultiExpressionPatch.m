@@ -137,7 +137,8 @@
 			{
 				resultVariable = [c objectAtIndex:0];
 				resultVariable = [resultVariable stringByTrimmingCharactersInSet:whitespaceCharacterSet];
-				rightSide = [[c objectAtIndex:1] stringByTrimmingCharactersInSet:whitespaceCharacterSet];
+				rightSide = [c objectAtIndex:1];
+				rightSide = [rightSide stringByReplacingOccurrencesOfString:@" " withString:@""];
 				
 				if( ![resultVariable length] )
 				{
