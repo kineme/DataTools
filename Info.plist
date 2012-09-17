@@ -19,7 +19,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.2</string>
 	<key>NSPrincipalClass</key>
 	<string>DataToolsPrincipal</string>
 	<key>GFPlugIn</key>
@@ -27,6 +27,6 @@
 	<key>KIMinimumSystemVersion</key>
 	<string>10.5</string>
 	<key>KIMaximumSystemVersion</key>
-	<string>10.7</string>
+	<string>10.8</string>
 </dict>
 </plist>
