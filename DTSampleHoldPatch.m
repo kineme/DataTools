@@ -114,7 +114,7 @@ bool DTIsValueSerializable(id v)
 {
 	NSData *d = [state objectForKey:@"data"];
 	if(d)
-		self.priorValue = [[NSKeyedUnarchiver unarchiveObjectWithData:d] retain];
+		self.priorValue = [NSKeyedUnarchiver unarchiveObjectWithData:d];
 
 	return [super setState:state];
 }
