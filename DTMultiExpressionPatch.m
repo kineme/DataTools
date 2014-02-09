@@ -228,6 +228,7 @@
 					// @"line" key is the line number to highlight (starts at 1, not zero ... Dijkstra would be pissed...)
 					[errors setObject:[NSNumber numberWithUnsignedInt:lineNumber] forKey:@"line"];
 				}
+				[expr release];
 				continue;
 			}
 			
